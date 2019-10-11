@@ -273,6 +273,134 @@ POST /funcSwitch/getAll.json
 
 ```
 
+### test{#/task/getMyTaskStatus.json  n}
 
+后端需要根据请求头中的`token`鉴权
+```
+POST /task/getMyTaskStatus.json  
+```
+```js
+{
+    "code":0,
+    "data":{
+        "arithmetic_force":141,
+        "currentChapter":0,
+        "dailyTaskList":[
+            {
+                "actived":true,
+                "arithForceAward":1,
+                "code":"DAILY_SIGN",
+                "description":"签到获取算力",
+                "id":1,
+                "isComplete":false,
+                "logo":"https://res.tuoluoshijie.com/icons/task/sign_task.png",
+                "name":"每日签到",
+                "setting":"",
+                "type":1,
+                "upperLimit":1
+            },
+            {
+                "actived":true,
+                "arithForceAward":50,
+                "code":"INVITE_FRIEND",
+                "description":"邀请1好友+10算力",
+                "id":2,
+                "isComplete":false,
+                "logo":"https://res.tuoluoshijie.com/icons/task/invite_task.png",
+                "name":"邀请5名好友",
+                "setting":"",
+                "type":1,
+                "upperLimit":5
+            },
+            {
+                "actived":true,
+                "arithForceAward":5,
+                "code":"ONLINE_TIME",
+                "description":"登录陀螺世界，在线时长30分钟",
+                "id":3,
+                "isComplete":true,
+                "logo":"https://res.tuoluoshijie.com/icons/task/online_task.png",
+                "name":"在线30分钟",
+                "setting":"",
+                "type":1,
+                "upperLimit":1
+            }
+        ],
+        "forceLevelLogo":"https://res.tuoluoshijie.com/icons/force_level/common/2.png",
+        "forceLevelName":"青铜矿工Ⅱ",
+        "inviteNum":0,
+        "isCompleteSign":false,
+        "isVerified":true,
+        "oneTimeTaskList":[
+            {
+                "actived":true,
+                "arithForceAward":100,
+                "code":"REAL_NAME_AUTH",
+                "description":"注册并完成实名认证",
+                "id":4,
+                "isComplete":true,
+                "logo":"https://res.tuoluoshijie.com/icons/task/verify_task.png",
+                "name":"实名认证",
+                "setting":"",
+                "type":2,
+                "upperLimit":1
+            },
+            {
+                "actived":true,
+                "arithForceAward":5,
+                "code":"SUBSCRIBE_MP_WEIXIN",
+                "description":"关注公众号获取算力",
+                "id":5,
+                "isComplete":false,
+                "logo":"https://res.tuoluoshijie.com/icons/task/subscribe_task.png",
+                "name":"关注微信公众号",
+                "setting":"",
+                "type":2,
+                "upperLimit":1
+            },
+            {
+                "actived":true,
+                "arithForceAward":5,
+                "code":"BIND_WEXIN",
+                "description":"绑定微信登录获取算力",
+                "id":6,
+                "isComplete":true,
+                "logo":"https://res.tuoluoshijie.com/icons/task/bind_task.png",
+                "name":"绑定微信",
+                "setting":"",
+                "type":2,
+                "upperLimit":1
+            },
+            {
+                "actived":true,
+                "arithForceAward":20,
+                "code":"NEWBIE_RESPONDENT",
+                "description":"回答问卷",
+                "id":10,
+                "isComplete":false,
+                "logo":"https://res.tuoluoshijie.com/icons/task/test/1556421350588.png",
+                "name":"新手学习(1/3)--游戏篇",
+                "setting":"["游戏篇","收益篇","生态篇"]",
+                "type":2,
+                "upperLimit":3
+            }
+        ],
+        "onlineMinutes":36,
+        "tlbc_count":0
+    },
+    "msg":"请求成功",
+    "success":true
+}
+```
+
+
+### test{#test.json}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST /funcSwitch/getAll.json
+```
+```js
+```
 
 
