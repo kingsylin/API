@@ -58,7 +58,7 @@ POST /user/loginByPwd
         },
          "marketDay":0,//赶集日期
   
-        },
+     
     }
   },
   "msg": "请求成功",
