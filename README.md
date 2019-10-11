@@ -495,7 +495,26 @@ POST /user/setMarketDay
     "success":true
 }
 ```
+### 设置QQ,微信账号{#/user/updateMemberSocialInfo}
 
+后端需要根据请求头中的`token`鉴权
+```
+POST /user/updateMemberSocialInf
+```
+### 字段说明
+
+| 参数名         | 类型            | 描述                          | 是否必须            |
+| ----------- | ------------- | --------------------------- | --------------- |
+| qq          | String   | qq                | 是               |
+| wechat          | String   | wechat                  | 是               |
+```js
+{
+    "code":0,
+    "data":{},
+    "msg":"请求成功",
+    "success":true
+}
+```
 
 ### test{#test.json}
 
