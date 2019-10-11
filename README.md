@@ -393,11 +393,11 @@ POST /task/getMyTaskStatus.json
 }
 ```
 
-###  手机版本更新接口{#/version/getLastestVersion.jso}
+###  手机版本更新接口{#/version/getLastestVersion.json}
 
 后端需要根据请求头中的`token`鉴权
 ```
-POST /version/getLastestVersion.jso
+POST /version/getLastestVersion.json
 ```
 ```js
 {
@@ -421,6 +421,50 @@ POST /version/getLastestVersion.jso
         "versionSize":"test",
         "versionSummary":"test",
         "versionTime":46465656565
+    },
+    "msg":"请求成功",
+    "success":true
+}
+
+```
+
+### 提交认证信息{#/personnel/realNameAuth.json}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST /personnel/realNameAuth.json
+```
+### 字段说明
+
+| 参数名         | 类型            | 描述                          | 是否必须            |
+| ----------- | ------------- | --------------------------- | --------------- |
+| realName          | string   | name                     | 是               |
+| idCard          | string   | ID                     | 是               |
+
+```js
+{
+    "code":0,
+    "data":{
+
+    },
+    "msg":"提交成功",
+    "success":true
+}
+```
+
+### 获取实名认证信息{#/personnel/getRealNameInfo.json}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST /personnel/getRealNameInfo.json
+```
+```js
+{
+    "code":0,
+    "data":{
+        "idCard":"",
+        "isVerified":true,
+        "realName":""
     },
     "msg":"请求成功",
     "success":true
