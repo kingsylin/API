@@ -431,7 +431,7 @@ POST /version/getLastestVersion.json
 
 ```
 
-### 提交认证信息{#/personnel/realNameAuth.json}
+### 提交认证信息{#/user/realNameAuth.json}
 
 后端需要根据请求头中的`token`鉴权
 ```
@@ -455,7 +455,7 @@ POST /personnel/realNameAuth.json
 }
 ```
 
-### 获取实名认证信息{#/personnel/getRealNameInfo.json}
+### 获取实名认证信息{#/user/getRealNameInfo.json}
 
 后端需要根据请求头中的`token`鉴权
 ```
@@ -474,6 +474,28 @@ POST /personnel/getRealNameInfo.json
 }
 
 ```
+### 设置赶集{#/user/setMarketDay}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST /user/setMarketDay
+```
+### 字段说明
+
+| 参数名         | 类型            | 描述                          | 是否必须            |
+| ----------- | ------------- | --------------------------- | --------------- |
+| marketDay          | int   | marketDay(1,2,3)                  | 是               |
+
+
+```js
+{
+    "code":0,
+    "data":{},
+    "msg":"请求成功",
+    "success":true
+}
+```
+
 
 ### test{#test.json}
 
