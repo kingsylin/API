@@ -499,7 +499,7 @@ POST /user/setMarketDay
 
 后端需要根据请求头中的`token`鉴权
 ```
-POST /user/updateMemberSocialInf
+POST /user/updateMemberSocialInfo
 ```
 ### 字段说明
 
