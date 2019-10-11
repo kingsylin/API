@@ -55,7 +55,10 @@ POST /user/loginByPwd
             "promptLevel":5,//提示级别
             "promptText":"我在10级等你哟~",
             "shortLevel":8,//升级红包还差几级
-        }
+        },
+         "marketDay":0,//赶集日期
+  
+        },
     }
   },
   "msg": "请求成功",
