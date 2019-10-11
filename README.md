@@ -273,9 +273,9 @@ POST /funcSwitch/getAll.json
 
 ```
 
-### test{#/task/getMyTaskStatus.json  n}
+### 打工界面{#/task/getMyTaskStatus.json  n}
 
-后端需要根据请求头中的`token`鉴权
+后端需要根据请求头中的`token`鉴权，如果不懂字段意思，可以登陆tuoluoshijie,打开 《打工》界面
 ```
 POST /task/getMyTaskStatus.json  
 ```
