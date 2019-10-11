@@ -219,3 +219,60 @@ POST /user/updateNickname
 | nickName          | string   | 昵称                     | 是               |
 
 返回数据同[基础响应](README.md#baseresponse)
+
+### app配置接口，页面配置接口{#/funcSwitch/getAll.json}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST /funcSwitch/getAll.json
+```
+```js
+{
+    "code":0,
+    "data":{
+        "hiddenArithmeticForce":false,
+        "hiddenBannerAds":false,
+        "hiddenCustomerServiceTel":false,
+        "hiddenDailyTaskHb":false,
+        "hiddenEarningPage":false,
+        "hiddenFlashScreen":false,
+        "hiddenGame":false,
+        "hiddenGiftPack":false,
+        "hiddenGrowArithmeticForce":false,
+        "hiddenHbExpressNews":false,
+        "hiddenInvitationCodeTips":false,
+        "hiddenInvitationVoucher":false,
+        "hiddenJoinCommunity":false,
+        "hiddenLaunchScreen":false,
+        "hiddenMyAssets":false,
+        "hiddenMyInvitationCode":false,
+        "hiddenMyTlbcToUseBtn":false,
+        "hiddenOldRecreation":true,
+        "hiddenRank":false,
+        "hiddenRealNameInfo":false,
+        "hiddenSDWNativeUrl":false,
+        "hiddenSettingAbountTlbc":false,
+        "hiddenSettingCommonQA":false,
+        "hiddenSettingTlbcEcoAccount":false,
+        "hiddenShowEarningPage":true,
+        "hiddenSpeedUpByInvitationVoucherBtn":false,
+        "hiddenSubscribeWechatMp":false,
+        "hiddenSuggestion":false,
+        "hiddenTlbcAccountLogin":false,
+        "hiddenTlbcAccountLoginBtn ":false,
+        "hiddenTlbcCollectHb":false,
+        "hiddenTreasureBox":false,
+        "hiddenTurntable":false,
+        "hiddenUpgradeHb":false,
+        "hiddenWholeTaskPage":false,
+        "hiddenWithdraw":false
+    },
+    "msg":"请求成功",
+    "success":true
+}
+
+```
+
+
+
+
