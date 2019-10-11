@@ -393,6 +393,40 @@ POST /task/getMyTaskStatus.json
 }
 ```
 
+###  手机版本更新接口{#/version/getLastestVersion.jso}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST /version/getLastestVersion.jso
+```
+```js
+{
+    "code":0,
+    "data":{
+        "compatible":false,
+        "domainType":0,
+        "downloadUrl":"test",
+        "forceUpdate":false,
+        "gitTag":"test",
+        "f16id":0,
+        "operateTime":54545454,
+        "operator":"test",
+        "platform":"test",
+        "status":0,
+        "type":0,
+        "versionDetail":"test",
+        "versionName":"test",
+        "versionOwner":"test",
+        "versionSeq":0,
+        "versionSize":"test",
+        "versionSummary":"test",
+        "versionTime":46465656565
+    },
+    "msg":"请求成功",
+    "success":true
+}
+
+```
 
 ### test{#test.json}
 
