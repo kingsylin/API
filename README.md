@@ -596,6 +596,36 @@ POST /user/applyWithdraw.json
     "success":true
 }
 ```
+### 零钱提现记录{#user/pageQueryWalletLog}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST user/pageQueryWalletLog
+```
+### 字段说明
+
+| 参数名         | 类型            | 描述                          | 是否必须            |
+| ----------- | ------------- | --------------------------- | --------------- |
+| pageNum          | int   | pageNum                | 是               |
+| pageSize          | int   | pageSize                | 是               |
+| orderBy          | int   | orderBy                | 是               |
+
+```js
+{
+    "code":0,
+    "data":[
+        {
+            "changeAmount":123,
+            "changeType":0,
+            "createTime":8899349394934,
+            "description":"",
+            "failReason":""
+        }
+    ],
+    "msg":"提现成功",
+    "success":true
+}
+```
 
 ### test{#test.json}
 
