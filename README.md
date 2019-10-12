@@ -531,7 +531,7 @@ POST /userupdateIsPrivacyVisible
 | ----------- | ------------- | --------------------------- | --------------- |
 | toFather          | boolean   | 对师傅是否可见                | 是               |
 | toGrandFather          | boolean   | 对师公是否可见                  | 是               |
-| toFather          | boolean   | 对徒弟是否可见                  | 是               |
+| toChild          | boolean   | 对徒弟是否可见                  | 是               |
 
 ```js
 {
