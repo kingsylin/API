@@ -516,6 +516,28 @@ POST /user/updateMemberSocialInfo
     "success":true
 }
 ```
+### test{#/userupdateIsPrivacyVisible}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST /userupdateIsPrivacyVisible
+```
+### 字段说明
+
+| 参数名         | 类型            | 描述                          | 是否必须            |
+| ----------- | ------------- | --------------------------- | --------------- |
+| toFather          | boolean   | 对师傅是否可见                | 是               |
+| toGrandFather          | boolean   | 对师公是否可见                  | 是               |
+| toFather          | boolean   | 对徒弟是否可见                  | 是               |
+
+```js
+{
+    "code":0,
+    "data":{},
+    "msg":"请求成功",
+    "success":true
+}
+```
 
 ### test{#test.json}
 
