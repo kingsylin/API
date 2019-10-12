@@ -555,7 +555,28 @@ POST /task/dailySign
     "success":true
 }
 ```
+### 我的钱包---->提现列表{#/user/getBalance}
 
+后端需要根据请求头中的`token`鉴权
+```
+POST /user/getBalance
+```
+```js
+{
+    "code":0,
+    "data":{
+        "balance":20,
+        "serviceChargeRate":0.3,
+        "withdrawAmountList":[
+            "0.3元",
+            "20元",
+            "30元"
+        ]
+    },
+    "msg":"success",
+    "success":true
+}
+```
 
 ### test{#test.json}
 
