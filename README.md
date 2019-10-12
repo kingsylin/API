@@ -626,6 +626,22 @@ POST user/pageQueryWalletLog
     "success":true
 }
 ```
+### test{#user/updateUserImg}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST user/updateUserImg
+```
+```js
+{
+    "code":0,
+    "data":{
+        "url":""
+    },
+    "msg":"提现成功",
+    "success":true
+}
+```
 
 ### test{#test.json}
 
