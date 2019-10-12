@@ -541,6 +541,21 @@ POST /userupdateIsPrivacyVisible
     "success":true
 }
 ```
+### 签到{#/task/dailySign}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST /task/dailySign
+```
+```js
+{
+    "code":0,
+    "data":{},
+    "msg":"success",
+    "success":true
+}
+```
+
 
 ### test{#test.json}
 
