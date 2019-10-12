@@ -583,6 +583,11 @@ POST /user/getBalance
 ```
 POST /user/applyWithdraw.json
 ```
+### 字段说明
+
+| 参数名         | 类型            | 描述                          | 是否必须            |
+| ----------- | ------------- | --------------------------- | --------------- |
+| withdrawAmount          | String   | 金额                | 是               |
 ```js
 {
     "code":0,
