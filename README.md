@@ -516,7 +516,7 @@ POST /user/updateMemberSocialInfo
     "success":true
 }
 ```
-### test{#/userupdateIsPrivacyVisible}
+### 设置隐私信息{#/userupdateIsPrivacyVisible}
 
 后端需要根据请求头中的`token`鉴权
 ```
