@@ -596,7 +596,7 @@ POST /user/applyWithdraw.json
     "success":true
 }
 ```
-### 零钱提现记录{#user/pageQueryWalletLog}
+### 零钱记录{#user/pageQueryWalletLog}
 
 后端需要根据请求头中的`token`鉴权
 ```
