@@ -577,6 +577,20 @@ POST /user/getBalance
     "success":true
 }
 ```
+### test{#/user/applyWithdraw.json}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST /user/applyWithdraw.json
+```
+```js
+{
+    "code":0,
+    "data":{},
+    "msg":"提现成功",
+    "success":true
+}
+```
 
 ### test{#test.json}
 
