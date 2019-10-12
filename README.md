@@ -519,11 +519,11 @@ POST /user/updateMemberSocialInfo
     "success":true
 }
 ```
-### 设置隐私信息{#/userupdateIsPrivacyVisible}
+### 设置隐私信息{#/user/updateIsPrivacyVisible}
 
 后端需要根据请求头中的`token`鉴权
 ```
-POST /userupdateIsPrivacyVisible
+POST /user/updateIsPrivacyVisible
 ```
 ### 字段说明
 
