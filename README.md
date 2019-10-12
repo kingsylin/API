@@ -1,6 +1,6 @@
 ## 用户
 
-### 账号密码登录{#loginByPwd}
+### 1:账号密码登录{#loginByPwd}
 
 ```
 POST /user/loginByPwd
@@ -132,7 +132,7 @@ POST /user/loginByPwd
 
 ```
 
-### 微信登录{#loginByWechat}
+### 2:微信登录{#loginByWechat}
 ```
 POST /user/loginByWechat
 ```
@@ -145,7 +145,7 @@ POST /user/loginByWechat
 返回数据同[登录数据](user.md#loginData)
 
 
-### 短信验证码登录{#loginByPhone}
+### 3:短信验证码登录{#loginByPhone}
 ```
 POST /user/loginByPhone
 ```
@@ -158,7 +158,7 @@ POST /user/loginByPhone
 
 返回数据同[登录数据](#loginData)
 
-### 找回密码{#getBackPwd}
+### 4:找回密码{#getBackPwd}
 ```
 POST /user/getBackPwd
 ```
@@ -173,7 +173,7 @@ POST /user/getBackPwd
 返回数据同[基础响应](README.md#baseresponse)
 
 
-### 修改昵称{#getUserInfo}
+### 5:修改昵称{#getUserInfo}
 
 后端需要根据请求头中的`token`鉴权
 ```
@@ -183,7 +183,7 @@ GET /user/getUserInfo
 
 返回数据同[登录数据](#loginData)
 
-### 设置密码{#setPassword}
+### 6:设置密码{#setPassword}
 
 后端需要根据请求头中的`token`鉴权
 ```
@@ -198,7 +198,7 @@ POST /user/setPassword
 返回数据同[基础响应](README.md#baseresponse)
 
 
-### 绑定手机号{#setPhone}
+### 7:绑定手机号{#setPhone}
 
 后端需要根据请求头中的`token`鉴权
 ```
@@ -213,7 +213,7 @@ POST /user/setPhone
 
 返回数据同[基础响应](README.md#baseresponse)
 
-### 修改昵称{#updateNickname}
+### 8:修改昵称{#updateNickname}
 
 后端需要根据请求头中的`token`鉴权
 ```
@@ -227,7 +227,7 @@ POST /user/updateNickname
 
 返回数据同[基础响应](README.md#baseresponse)
 
-### app配置接口，页面配置接口{#/funcSwitch/getAll.json}
+### 9:app配置接口，页面配置接口{#/funcSwitch/getAll}
 
 后端需要根据请求头中的`token`鉴权
 ```
@@ -280,11 +280,11 @@ POST /funcSwitch/getAll.json
 
 ```
 
-### 打工界面{#/task/getMyTaskStatus.json  n}
+### 10:打工界面{#/task/getMyTaskStatus}
 
 后端需要根据请求头中的`token`鉴权，如果不懂字段意思，可以登陆tuoluoshijie,打开 《打工》界面
 ```
-POST /task/getMyTaskStatus.json  
+POST /task/getMyTaskStatus  
 ```
 ```js
 {
@@ -400,11 +400,11 @@ POST /task/getMyTaskStatus.json
 }
 ```
 
-###  手机版本更新接口{#/version/getLastestVersion.json}
+###  11:手机版本更新接口{#/version/getLastestVersion}
 
 后端需要根据请求头中的`token`鉴权
 ```
-POST /version/getLastestVersion.json
+POST /version/getLastestVersion
 ```
 ```js
 {
@@ -435,11 +435,11 @@ POST /version/getLastestVersion.json
 
 ```
 
-### 提交认证信息{#/user/realNameAuth.json}
+### 12:提交认证信息{#/user/realNameAuthn}
 
 后端需要根据请求头中的`token`鉴权
 ```
-POST /personnel/realNameAuth.json
+POST /personnel/realNameAuth
 ```
 ### 字段说明
 
@@ -459,11 +459,11 @@ POST /personnel/realNameAuth.json
 }
 ```
 
-### 获取实名认证信息{#/user/getRealNameInfo.json}
+### 13获取实名认证信息{#/user/getRealNameInfo}
 
 后端需要根据请求头中的`token`鉴权
 ```
-POST /personnel/getRealNameInfo.json
+POST /personnel/getRealNameInfo
 ```
 ```js
 {
@@ -478,7 +478,7 @@ POST /personnel/getRealNameInfo.json
 }
 
 ```
-### 设置赶集{#/user/setMarketDay}
+### 14:设置赶集{#/user/setMarketDay}
 
 后端需要根据请求头中的`token`鉴权
 ```
@@ -499,7 +499,7 @@ POST /user/setMarketDay
     "success":true
 }
 ```
-### 设置QQ,微信账号{#/user/updateMemberSocialInfo}
+### 15:设置QQ,微信账号{#/user/updateMemberSocialInfo}
 
 后端需要根据请求头中的`token`鉴权
 ```
@@ -519,7 +519,7 @@ POST /user/updateMemberSocialInfo
     "success":true
 }
 ```
-### 设置隐私信息{#/user/updateIsPrivacyVisible}
+### 16:设置隐私信息{#/user/updateIsPrivacyVisible}
 
 后端需要根据请求头中的`token`鉴权
 ```
@@ -541,7 +541,7 @@ POST /user/updateIsPrivacyVisible
     "success":true
 }
 ```
-### 签到{#/task/dailySign}
+### 17:签到{#/task/dailySign}
 
 后端需要根据请求头中的`token`鉴权
 ```
@@ -555,7 +555,7 @@ POST /task/dailySign
     "success":true
 }
 ```
-### 我的钱包---->提现列表{#/user/getBalance}
+### 18:我的钱包---->提现列表{#/user/getBalance}
 
 后端需要根据请求头中的`token`鉴权
 ```
@@ -577,7 +577,7 @@ POST /user/getBalance
     "success":true
 }
 ```
-### test{#/user/applyWithdraw.json}
+### 19:提现接口{#/user/applyWithdraw.json}
 
 后端需要根据请求头中的`token`鉴权
 ```
@@ -596,7 +596,7 @@ POST /user/applyWithdraw.json
     "success":true
 }
 ```
-### 零钱记录{#user/pageQueryWalletLog}
+### 20:零钱记录{#user/pageQueryWalletLog}
 
 后端需要根据请求头中的`token`鉴权
 ```
@@ -626,7 +626,7 @@ POST user/pageQueryWalletLog
     "success":true
 }
 ```
-### test{#user/updateUserImg}
+### 21:上传头像{#user/updateUserImg}
 
 后端需要根据请求头中的`token`鉴权
 ```
@@ -638,7 +638,7 @@ POST user/updateUserImg
     "data":{
         "url":""
     },
-    "msg":"提现成功",
+    "msg":"上传成功",
     "success":true
 }
 ```
