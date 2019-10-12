@@ -28,7 +28,10 @@ POST /user/loginByPwd
       "nickname":"System", //昵称
       "phone":"13800000000", //手机号
       "qq":"13023120", //QQ
-       "wechat":"",//微信
+      "wechat":"",//微信
+      "isPrivacyVisibleToChild":false,
+      "isPrivacyVisibleToFather":false,
+      "isPrivacyVisibleToGrandfather":false,
       "coin_id":9821454312, //虚拟币钱包ID
       "coin_count":1, //虚拟币金额
       "isIsVerified":false,//是否实名认证
