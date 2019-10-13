@@ -642,6 +642,46 @@ POST user/updateUserImg
     "success":true
 }
 ```
+### 零钱记录详情{#/user/getWithdrawDetail}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST /user/getWithdrawDetail
+```
+```js
+{
+    "code":0,
+    "data":{
+        "auditRemark":"",
+        "auditStatus":0,
+        "auditTime":767667676,
+        "createTime":64464464,
+        "idCard":"",
+        "memberId":"",
+        "memberIp":"",
+        "memberStatus":"",
+        "nickname":"",
+        "openId":"",
+        "operator":"",
+        "operatorId":"",
+        "orderNo":"",
+        "paymentNo":"",
+        "paymentTime":"",
+        "phone":"",
+        "realName":"",
+        "reason":"",
+        "receiveAmount":12,
+        "serviceAmount":12,
+        "status":1,
+        "type":1,
+        "withdrawAmount":12,
+        "withdrawRemark":"",
+        "withdrawStatus":1
+    },
+    "msg":"上传成功",
+    "success":true
+}
+```
 
 ### test{#test.json}
 
