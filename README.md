@@ -304,7 +304,8 @@ POST /task/getMyTaskStatus
                 "name":"每日签到",
                 "setting":"",
                 "type":1,
-                "upperLimit":1
+                "upperLimit":1,
+                "onlineMinutes":10
             },
             {
                 "actived":true,
@@ -317,7 +318,8 @@ POST /task/getMyTaskStatus
                 "name":"邀请5名好友",
                 "setting":"",
                 "type":1,
-                "upperLimit":5
+                "upperLimit":5,
+                "onlineMinutes":10
             },
             {
                 "actived":true,
@@ -330,7 +332,8 @@ POST /task/getMyTaskStatus
                 "name":"在线30分钟",
                 "setting":"",
                 "type":1,
-                "upperLimit":1
+                "upperLimit":1,
+                "onlineMinutes":10
             }
         ],
         "forceLevelLogo":"https://res.tuoluoshijie.com/icons/force_level/common/2.png",
@@ -350,7 +353,8 @@ POST /task/getMyTaskStatus
                 "name":"实名认证",
                 "setting":"",
                 "type":2,
-                "upperLimit":1
+                "upperLimit":1,
+                "onlineMinutes":10
             },
             {
                 "actived":true,
@@ -363,7 +367,8 @@ POST /task/getMyTaskStatus
                 "name":"关注微信公众号",
                 "setting":"",
                 "type":2,
-                "upperLimit":1
+                "upperLimit":1,
+                "onlineMinutes":10
             },
             {
                 "actived":true,
@@ -376,7 +381,8 @@ POST /task/getMyTaskStatus
                 "name":"绑定微信",
                 "setting":"",
                 "type":2,
-                "upperLimit":1
+                "upperLimit":1,
+                "onlineMinutes":10
             },
             {
                 "actived":true,
@@ -389,7 +395,8 @@ POST /task/getMyTaskStatus
                 "name":"新手学习(1/3)--游戏篇",
                 "setting":"["游戏篇","收益篇","生态篇"]",
                 "type":2,
-                "upperLimit":3
+                "upperLimit":3,
+                "onlineMinutes":10
             }
         ],
         "onlineMinutes":36,
