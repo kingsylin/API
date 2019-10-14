@@ -557,7 +557,9 @@ POST /task/dailySign
 ```js
 {
     "code":0,
-    "data":{},
+    "data":{
+        "force":1
+    },
     "msg":"success",
     "success":true
 }
