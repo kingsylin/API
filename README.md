@@ -741,6 +741,7 @@ POST user/pageQueryMyInvitation
 | orderBy          | int   | orderBy                | 是               |
 | isVerified          | boolean   | 实名认证                | 是               |
 | privacyVisible          | boolean   | 是否隐私（联系方式）                |是          |
+| type          | int   | 0:徒弟，1:徒孙                |是          |
 
 ```js
 {
@@ -763,6 +764,36 @@ POST user/pageQueryMyInvitation
             "status":0,
             "statusDesc":"",
             "wechat":""
+        }
+    ],
+    "msg":"请求成功",
+    "success":true
+}
+```
+
+### 邀请记录（待激活）{# user/pageQueryNotActivatedInvitation}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST user/pageQueryNotActivatedInvitation
+```
+### 字段说明
+
+| 参数名         | 类型            | 描述                          | 是否必须            |
+| ----------- | ------------- | --------------------------- | --------------- |
+| pageNum          | int   | pageNum                | 是               |
+| pageSize          | int   | pageSize                | 是               |
+```js
+{
+    "code":0,
+    "data":[
+        {
+            "activateTime":9394395454,
+            "createTime":65656565,
+            "hbAmount":12,
+            "inviterId":1,
+            "isActivate":false,
+            "phone":""
         }
     ],
     "msg":"请求成功",
