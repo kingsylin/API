@@ -691,6 +691,41 @@ POST /user/getWithdrawDetail
     "success":true
 }
 ```
+### 邀请好友详细信息{# user/getMyInvitationCode}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST user/getMyInvitationCode
+```
+```js
+{
+    "code":0,
+    "data":{
+        "effectivePetLevel":1,
+        "invitationCode":"",
+        "isHaveParent":false,
+        "parent":{
+            "avatar":"",
+            "isPrivacyVisibleToChild":false,
+            "isVerified":false,
+            "nickname":"",
+            "petLevel":0,
+            "phone":"",
+            "qq":"",
+            "wechat":""
+        },
+        "parentLike":false,
+        "priForceAward":1,
+        "priFriendCount":1,
+        "priFriendRewardsForce":1,
+        "secForceAward":1,
+        "secFriendCount":1,
+        "secFriendRewardsForce":1
+    },
+    "msg":"上传成功",
+    "success":true
+}
+```
 
 ### test{#test.json}
 
