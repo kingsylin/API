@@ -799,7 +799,7 @@ POST user/pageQueryNotActivatedInvitation
     "msg":"请求成功",
     "success":true
 }
-``
+```
 
 
 ### 分享海报 {# user/getShareQrcode}
