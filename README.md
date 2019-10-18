@@ -799,7 +799,23 @@ POST user/pageQueryNotActivatedInvitation
     "msg":"请求成功",
     "success":true
 }
+``
+### 分享海报 {# user/getShareQrcode}
+
+后端需要根据请求头中的`token`鉴权
 ```
+POST  user/getShareQrcode
+```
+```js
+{
+    "code":0,
+    "data":{
+        "petQrCodeShareUrl":"https://www.baidu.com/"
+    },
+    "msg":"请求成功",
+    "success":true
+}
+````
 
 ### test{#test.json}
 
