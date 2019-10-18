@@ -800,6 +800,8 @@ POST user/pageQueryNotActivatedInvitation
     "success":true
 }
 ``
+
+
 ### 分享海报 {# user/getShareQrcode}
 
 后端需要根据请求头中的`token`鉴权
