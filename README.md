@@ -818,6 +818,22 @@ POST  user/getShareQrcode
     "success":true
 }
 ````
+### 收益界面{# user/earningsIndex}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST user/earningsIndex
+```
+```js
+{
+    "code":0,
+    "data":{
+        "earningsUrl":"https://www.baidu.com/"
+    },
+    "msg":"请求成功",
+    "success":true
+}
+```
 
 ### test{#test.json}
 
