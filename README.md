@@ -834,6 +834,25 @@ POST user/earningsIndex
     "success":true
 }
 ```
+### app配置接口{# app/controlConfig}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST app/controlConfig
+```
+```js
+{
+    "code":0,
+    "data":{
+        "gameurl":"http://h5.512218.cn/",
+        "RecreationUrl":"http://www.shandw.com/pc/index/?channel=12635&v=315",
+        "earningsUrl":"https://www.baidu.com/"
+    },
+    "msg":"请求成功",
+    "success":true
+}
+
+```
 
 ### test{#test.json}
 
