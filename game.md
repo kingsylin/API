@@ -1,4 +1,4 @@
-##  js 调用Android 方法
+## 游戏js 调用Android 方法
 
 js方法
 ```
