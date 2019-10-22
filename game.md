@@ -1,4 +1,16 @@
-1:趣钱进产品上线准备，bug修复，多渠道处理。
-2:图集app产品开发，打包
-3:陀螺世界产品反编译研究，java文件分析
-4:陀螺世界产品代码分析，xml布局第三方库的研究分析
+##  Android 调用js方法
+
+js方法
+```
+var game={
+    "action":1,
+    "jumpUrl":"",
+    "msg":""
+}
+
+window.android.callAndroid(game);
+```
+```js
+action==1时，全屏视频广告播放
+
+```
