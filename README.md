@@ -869,9 +869,9 @@ POST user/getRedPacket
 {
     "code":0,
     "data":{
-        "hbAmount":1
+        "hbAmount":1。0
     },
-    "msg":"请求成功",
+    "msg":"领取成功",
     "success":true
 }
 ```
