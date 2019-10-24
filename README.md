@@ -853,6 +853,29 @@ POST app/controlConfig
 }
 
 ```
+### 领取红包 {# user/getRedPacket}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST user/getRedPacket
+```
+### 字段说明
+
+| 参数名         | 类型            | 描述                          | 是否必须            |
+| ----------- | ------------- | --------------------------- | --------------- |
+| type          | int   | type=0,打工红包，type=1随机红包，type=2升级红包                | 是         |
+
+```js
+{
+    "code":0,
+    "data":{
+        "hbAmount":1
+    },
+    "msg":"请求成功",
+    "success":true
+}
+```
+
 
 ### test{#test.json}
 
