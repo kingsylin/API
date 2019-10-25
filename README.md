@@ -876,6 +876,55 @@ POST user/getRedPacket
 }
 ```
 
+### 我的TLBC{# user/getTlbcNumberAndChangeLog}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST user/getTlbcNumberAndChangeLog
+```
+```js
+{
+    "code":0,
+    "data":[
+        {
+            "created_time":"",
+            "description":"",
+            "tlbc_number":1,
+            "value":1
+        }
+    ],
+    "msg":"领取成功",
+    "success":true
+}
+```
+
+
+### 我的tlbc{#  user/getArithmeticForceAndChangeLog}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST user/getArithmeticForceAndChangeLog
+```
+```js
+{
+    "code":0,
+    "data":{
+        "arithmetic_force":"12",
+        "list":[
+            {
+                "arithmetic_force":"",
+                "created_time":"",
+                "description":1,
+                "value":1
+            }
+        ]
+    },
+    "msg":"领取成功",
+    "success":true
+}
+```
+
+
 
 ### test{#test.json}
 
