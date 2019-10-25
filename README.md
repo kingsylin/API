@@ -882,6 +882,12 @@ POST user/getRedPacket
 ```
 POST user/getTlbcNumberAndChangeLog
 ```
+### 字段说明
+
+| 参数名         | 类型            | 描述                          | 是否必须            |
+| ----------- | ------------- | --------------------------- | --------------- |
+| pageNum          | int   | pageNum                | 是               |
+| pageSize          | int   | pageSize                | 是               |
 ```js
 {
     "code":0,
@@ -905,6 +911,7 @@ POST user/getTlbcNumberAndChangeLog
 ```
 POST user/getArithmeticForceAndChangeLog
 ```
+
 ```js
 {
     "code":0,
