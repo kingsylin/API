@@ -899,7 +899,7 @@ POST user/getTlbcNumberAndChangeLog
 ```
 
 
-### 我的tlbc{#  user/getArithmeticForceAndChangeLog}
+### 我的算力{#  user/getArithmeticForceAndChangeLog}
 
 后端需要根据请求头中的`token`鉴权
 ```
