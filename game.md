@@ -7,7 +7,7 @@ var game={
     "jumpUrl":"",
     "msg":""
 }
-
+game为String类型
 window.android.callAndroid(game);
 ```
 ```js
