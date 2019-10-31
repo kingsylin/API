@@ -15,7 +15,18 @@ action==1时，全屏视频广告播放,action==2时， 触发底部banner广告
 
 ```
 
+## Android 调用 js  方法
 
+js方法
+```
+  function callByAndroidInteraction(msg){
+    
+  }
+```
+```js
+msg 为string类型，msg==1,已看完,未看完
+
+```
 
 
 
