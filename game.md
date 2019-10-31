@@ -5,13 +5,24 @@ js方法
 var game={
     "action":1,
     "jumpUrl":"",
-    "msg":""
+    "msg":"",
+    "prizeType":1
 }
 game为String类型
 window.android.callAndroid(game);
 ```
 ```js
 action==1时，全屏视频广告播放,action==2时， 触发底部banner广告,
+
+目前的奖励类型
+prizeType:{ 
+ 1=金币不足
+ 2=游戏加速
+ 3=打开飞行宝箱
+ 4=获得转盘卷
+ 5=获得恐龙
+ …其它待定
+}
 
 ```
 
@@ -24,7 +35,24 @@ js方法
   }
 ```
 ```js
-msg 为string类型，msg==1,已看完,msg==0,未看完
+var game={
+    "action":1,
+    "msg":"",
+    "prizeType":1,
+}
+action:{
+0=视频广告观看完毕
+1=为看望
+}
+目前的奖励类型
+prizeType:{ 
+ 1=金币不足
+ 2=游戏加速
+ 3=打开飞行宝箱
+ 4=获得转盘卷
+ 5=获得恐龙
+ …其它待定
+}
 
 ```
 
