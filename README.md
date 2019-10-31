@@ -930,6 +930,27 @@ POST user/getArithmeticForceAndChangeLog
     "success":true
 }
 ```
+### 我的收益{# user/earnList}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST user/earnList
+```
+```js
+{
+    "code":0,
+    "data":[
+        {
+            "creat_time":4353535353,
+            "activity_earn":"1.0",
+            "loong_earn":"1.0",
+            "all_earn":"2.0"
+        }
+    ],
+    "msg":"领取成功",
+    "success":true
+}
+```
 
 
 
