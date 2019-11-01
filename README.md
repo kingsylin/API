@@ -951,7 +951,33 @@ POST user/earnList
     "success":true
 }
 ```
+### 用户广告视频数据提交{# user/postADinfo}
 
+后端需要根据请求头中的`token`鉴权
+```
+POST /funcSwitch/getAll.json
+```
+### 字段说明
+
+| 参数名         | 类型            | 描述                          | 是否必须            |
+| ----------- | ------------- | --------------------------- | --------------- |
+| prizeType          | int   | 目前的奖励类型
+prizeType:{ 
+ 1=金币不足
+ 2=游戏加速
+ 3=打开飞行宝箱
+ 4=获得转盘卷
+ 5=获得恐龙
+ …其它待定
+}              | 是               |
+```js
+{
+    "code":0,
+    "data":null,
+    "msg":"提交成功",
+    "success":true
+}
+```
 
 
 ### test{#test.json}
