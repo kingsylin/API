@@ -10,9 +10,10 @@ var game={
 }
 game为String类型
 window.android.callAndroid(game);
+action==1时，全屏视频广告播放,action==2时， 触发底部banner广告,action==？待定
 ```
 ```js
-action==1时，全屏视频广告播放,action==2时， 触发底部banner广告,
+
 
 目前的奖励类型
 prizeType:{ 
