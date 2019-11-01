@@ -955,7 +955,7 @@ POST user/earnList
 
 后端需要根据请求头中的`token`鉴权
 ```
-POST /funcSwitch/getAll.json
+POST user/postADinfo
 ```
 ### 字段说明
 
