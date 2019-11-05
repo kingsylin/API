@@ -40,10 +40,12 @@ var game={
     "action":1,
     "msg":"",
     "prizeType":1,
+    "token":"gtgtgththgggfgfgfgf"
 }
 action:{
-0=视频广告观看完毕
-1=为看望
+0=视频广告观看完毕，
+1=为看完，
+2=获取token
 }
 目前的奖励类型
 prizeType:{ 
