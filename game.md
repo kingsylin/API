@@ -10,7 +10,7 @@ var game={
 }
 game为String类型
 window.android.callAndroid(game);
-action==1时，全屏视频广告播放,action==2时， 触发底部banner广告,action==3时分享调起，action==？待定
+action==1时，全屏视频广告播放,action==2时， 触发底部banner广告,action==3时分享调起，action==4时网页调起，action==？待定
 ```
 ```js
 
