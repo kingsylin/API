@@ -970,6 +970,34 @@ POST user/postADinfo
     "success":true
 }
 ```
+### 收益记录详情{# user/earnHistoryInfo}
+
+后端需要根据请求头中的`token`鉴权
+```
+POST user/earnHistoryInfo
+```
+```js
+{
+    "code":0,
+    "data":{
+        "catEarthYesterdayEarn":1243,
+        "catEarthYesterdayHistoryEarn":1243,
+        "yesterdayWealthCatNum":10,
+        "allWealthCatNum":100,
+        "nowWealthCatNum":2,
+        "futureWealthCatNum":10,
+        "list":[
+            {
+                "nickname":"nickname",
+                "info":"info",
+                "time":124243433
+            }
+        ]
+    },
+    "msg":"success",
+    "success":true
+}
+```
 
 
 ### test{#test.json}
