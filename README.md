@@ -845,8 +845,21 @@ POST app/controlConfig
     "code":0,
     "data":{
         "gameurl":"http://h5.512218.cn/",
-        "RecreationUrl":"http://www.shandw.com/pc/index/?channel=12635&v=315",
-        "earningsUrl":"https://www.baidu.com/"
+        "RecreationUrl":"http://www.shandw.com/m/indexTemp/?theme=bright&channel=12635",
+        "earningsUrl":"http://5g.512218.cn/",
+        "privacyPact":"https://5g.512218.cn/common/privacy_pact",
+        "servicePact":"https://5g.512218.cn/common/privacy_pact",
+        "commonProblem":"https://5g.512218.cn/common/common_problem",
+        "aboutTlbc":"https://5g.512218.cn/common/about_tlbc",
+        "withdrawExplain":"https://5g.512218.cn/withdraw/explain",
+        "aboutWechat":"https://5g.512218.cn/common/about_wechat",
+        "register":"https://5g.512218.cn/index/register",
+        "InviteFriendsShreUrl":"",
+        "playGameIntroduceUrl":"",
+        "shareBonusiInfoUrl":"",
+        "myTlbcUrl":"",
+        "activityUrl":"",
+        "systemUrl":""
     },
     "msg":"请求成功",
     "success":true
