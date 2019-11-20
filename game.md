@@ -7,13 +7,13 @@ var game={
     "jumpUrl":"",
     "msg":"",
     "prizeType":1,
-    "adId":""
+    
 }
 game为String类型
 window.android.callAndroid(game);
 action==1时，全屏视频广告播放,action==2时， 触发底部banner广告,action==3时分享调起，
 action==4时网页调起 
-备注：（jumpUrl:1:游戏玩法介绍,2:分红信息,3:我的TLBC,4:活动内容,5:系统消息）,adId为广告播放id
+备注：（jumpUrl:1:游戏玩法介绍,2:分红信息,3:我的TLBC,4:活动内容,5:系统消息）,
 ```
 ```js
 
@@ -48,6 +48,7 @@ action:{
 0=视频广告观看完毕，
 1=为看完，
 }
+adId为广告播放id
 目前的奖励类型
 prizeType:{ 
  1=金币不足
