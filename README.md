@@ -983,7 +983,25 @@ POST user/postADinfo
     "success":true
 }
 ```
+### 广告状态播放成功记录{# user/setADstate}
 
+后端需要根据请求头中的`token`鉴权
+```
+POST user/setADstate
+```
+### 字段说明
+
+| 参数名         | 类型            | 描述                          | 是否必须            |
+| ----------- | ------------- | --------------------------- | --------------- |
+| adId   | String   | 广告id| 是|
+```js
+{
+    "code":0,
+    "data":null,
+    "msg":"提交成功",
+    "success":true
+}
+```
 
 
 ### test{#test.json}
