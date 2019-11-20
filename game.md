@@ -42,7 +42,8 @@ js方法
 var game={
     "action":1,
     "msg":"",
-    "prizeType":1
+    "prizeType":1,
+    "adId":""
 }
 action:{
 0=视频广告观看完毕，
