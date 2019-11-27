@@ -12,7 +12,7 @@ var game={
 game为String类型
 window.android.callAndroid(game);
 action==1时，全屏视频广告播放,action==2时， 触发底部banner广告,action==3时分享调起，
-action==4时网页调起 
+action==4时网页调起，action==5时，升级红包领取
 备注：（jumpUrl:1:游戏玩法介绍,2:分红信息,3:我的TLBC,4:活动内容,5:系统消息）,
 ```
 ```js
