@@ -12,7 +12,8 @@ var game={
 game为String类型
 window.android.callAndroid(game);
 action==1时，全屏视频广告播放,action==2时， 触发底部banner广告,action==3时分享调起，
-action==4时网页调起，action==5时，升级红包领取
+action==4时网页调起，action==5时，升级红包领取，
+action==6,实名认证（原生判断是否实名，没有实名跳转实名认证界面，已经实名认证，通知游戏）
 备注：（jumpUrl:1:游戏玩法介绍,2:分红信息,3:我的TLBC,4:活动内容,5:系统消息）,
 ```
 ```js
@@ -48,6 +49,7 @@ var game={
 action:{
 0=视频广告观看完毕，
 1=为看完，
+2=实名认证成功
 }
 adId为广告播放id
 目前的奖励类型
